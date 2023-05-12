@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://chtsai0105.github.io/sitemap.xml
