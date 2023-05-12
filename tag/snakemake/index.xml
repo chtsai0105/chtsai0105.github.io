@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>snakemake | CHTsai</title><link>https://chtsai0105.github.io/tag/snakemake/</link><atom:link href="https://chtsai0105.github.io/tag/snakemake/index.xml" rel="self" type="application/rss+xml"/><description>snakemake</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 May 2023 11:33:54 -0700</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url><title>snakemake</title><link>https://chtsai0105.github.io/tag/snakemake/</link></image><item><title>Snakemake</title><link>https://chtsai0105.github.io/project/snakemake/</link><pubDate>Thu, 11 May 2023 11:33:54 -0700</pubDate><guid>https://chtsai0105.github.io/project/snakemake/</guid><description>&lt;p>&lt;a href="https://snakemake.github.io/" target="_blank" rel="noopener">Snakemake&lt;/a> is a Python based workflow management system which aim to create a
+reproducible and scalable data processing pipeline. In the workflow, there are rules defined how to create
+outputs from inputs. When running the snakemake, it will automatically determine what rules should be run in
+order to obtain a given target output(s).&lt;/p>
+&lt;p>Building a snakemake workflow is very different, and even more challenging than the traditional method.
+In the past, we usually construct the workflow with a series of scripts and run it step by step. Therefore,
+we can easily connect the workflow by assigning the output of the current step as the input for the next step.
+However, the snakemake isn&amp;rsquo;t work like that. It somewhat works with a back-tracing manner - decide the final
+target first and look for rule that can create these outputs, and keep going upward until it reach the input(s)
+we currently have. Developer should also think backward when defining the rules. (i.e. defining the input name
+from the output) In other words, the snakemake workflow relies heavily on the file name and used it to determine
+what rules should be used. Since the workflow/rule order was decided automatically, developer also need to be
+cautious when defining the rules. Ambiguity will cause the failure of the workflow. Implicit defined rules will
+even connect the workflow in an unexpected way and usually produce false output.&lt;/p>
+&lt;p>Currently we are developing several workflows that can be used for:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/chtsai0105/smk-metagenome" target="_blank" rel="noopener">Shotgun metagenomic analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chtsai0105/meta-analysis" target="_blank" rel="noopener">Amplicon meta-analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chtsai0105/smk-compartive_genomics" target="_blank" rel="noopener">Comparative genomics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chtsai0105/smk-genomeasm_nanopore" target="_blank" rel="noopener">Nanopore long-read assembly&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CHTsai</title><link>https://chtsai0105.github.io/</link><atom:link href="https://chtsai0105.github.io/index.xml" rel="self" type="application/rss+xml"/><description>CHTsai</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 May 2023 11:33:54 -0700</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url><title>CHTsai</title><link>https://chtsai0105.github.io/</link></image><item><title>Snakemake</title><link>https://chtsai0105.github.io/project/snakemake/</link><pubDate>Thu, 11 May 2023 11:33:54 -0700</pubDate><guid>https://chtsai0105.github.io/project/snakemake/</guid><description>&lt;p>&lt;a href="https://snakemake.github.io/" target="_blank" rel="noopener">Snakemake&lt;/a> is a Python based workflow management system which aim to create a
+reproducible and scalable data processing pipeline. In the workflow, there are rules defined how to create
+outputs from inputs. When running the snakemake, it will automatically determine what rules should be run in
+order to obtain a given target output(s).&lt;/p>
+&lt;p>Building a snakemake workflow is very different, and even more challenging than the traditional method.
+In the past, we usually construct the workflow with a series of scripts and run it step by step. Therefore,
+we can easily connect the workflow by assigning the output of the current step as the input for the next step.
+However, the snakemake isn&amp;rsquo;t work like that. It somewhat works with a back-tracing manner - decide the final
+target first and look for rule that can create these outputs, and keep going upward until it reach the input(s)
+we currently have. Developer should also think backward when defining the rules. (i.e. defining the input name
+from the output) In other words, the snakemake workflow relies heavily on the file name and used it to determine
+what rules should be used. Since the workflow/rule order was decided automatically, developer also need to be
+cautious when defining the rules. Ambiguity will cause the failure of the workflow. Implicit defined rules will
+even connect the workflow in an unexpected way and usually produce false output.&lt;/p>
+&lt;p>Currently we are developing several workflows that can be used for:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/chtsai0105/smk-metagenome" target="_blank" rel="noopener">Shotgun metagenomic analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chtsai0105/meta-analysis" target="_blank" rel="noopener">Amplicon meta-analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chtsai0105/smk-compartive_genomics" target="_blank" rel="noopener">Comparative genomics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chtsai0105/smk-genomeasm_nanopore" target="_blank" rel="noopener">Nanopore long-read assembly&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Predicting splicing patterns from the transcription factor binding sites in the promoter with deep learning</title><link>https://chtsai0105.github.io/publication/lin-predicting-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://chtsai0105.github.io/publication/lin-predicting-2023/</guid><description/></item><item><title>Metagenomics</title><link>https://chtsai0105.github.io/project/metagenomics/</link><pubDate>Tue, 13 Dec 2022 23:18:17 -0700</pubDate><guid>https://chtsai0105.github.io/project/metagenomics/</guid><description>&lt;p>There are 2 major metagenomic approaches to investigate the microbiome - amplicon sequencing and shotgun
+sequencing. The major aim for amplicon-based approach is estimate the relative abundance of each species
+in the sample. For shotgun-based method, we can retrieve the metagenome-assembled genomes (MAGs) and
+further interrogate the functional capacity of them.&lt;/p>
+&lt;p>Currently, we apply metagenomic techniques to 2 ongoing projects - The citrus huanglongbing (HLB) project
+and elk coprophilous microbiome project.&lt;/p>
+&lt;p>In the citrus HLB project, we aim to find out how the citurs rhizosphere microbiome change during the HLB
+progression. It have been observed that the HLB-infected citrus trees suffered from root decline. In
+previous studies, we also confirmed that the HLB infection resulted in a different microbiome pattern in
+citrus rhizosphere. Our goal is to track the rhizosphere microbiome alteration and further looking for the
+functional changes during the HLB progression. Hopefully we will know more about the association between
+the rhizosphere microbiome and the HLB-related root decline symptom.&lt;/p>
+&lt;p>In the coprophilous microbiome project, we use the elk dung as a model system to observe the succession
+process. During the decomposition of dung, the microbiome utlize the nutrient resources and further change
+the nutritional condition and temperature, which in turn drive the succession of microbiome. The elk dung
+pellets were collected in a series of time points. The data was been analyse through both amplicon and
+shotgun approaches to reveal the populational change in coprophilous microbiome.&lt;/p>
+&lt;p>Sicne the shotgun metagenomic analysis usually contains several steps, we also developed a snakemake
+workflow to process the data. Please refer to the &lt;a href="https://github.com/chtsai0105/smk-metagenome" target="_blank" rel="noopener">GitHub page&lt;/a>
+for more details. Note that the workflow is still under development and is subject to change.&lt;/p></description></item><item><title>Identification and comparative analysis of long non-coding RNAs in the brain of fire ant queens in two different reproductive states</title><link>https://chtsai0105.github.io/publication/tsai-identification-2022/</link><pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate><guid>https://chtsai0105.github.io/publication/tsai-identification-2022/</guid><description/></item><item><title>IDRs on fungi</title><link>https://chtsai0105.github.io/project/idr_on_fungi/</link><pubDate>Mon, 25 Oct 2021 14:31:14 -0700</pubDate><guid>https://chtsai0105.github.io/project/idr_on_fungi/</guid><description>&lt;p>Intrinsically disodered regions (IDRs) are polypeptide segments which have flexible structure. They often
+lack of hydrophobic residues (which is the major driving component for protein folding) but enriched in
+polar/charged residues (which enhance their capability to interact with water solvent). The characteristic
+is used by some tools to predict the IDRs from a peptide sequence.&lt;/p>
+&lt;p>In this project, we collected the peptide sequences from 1,014 fungal species curated by Ensembl and got
+over 8 millions predicted IDRs by the tools IUPred2. We calculated the IDP/peptide ratio and found they are
+varying between subphylum - Microsporidia has only 12.5% of the peptides are IDP but more than half of the
+peptides in Ustilaginomycotina contains IDRs.&lt;/p>
+&lt;p>We further investigate the relationship between IDP/peptide ratio and genome size and generate an &lt;a href="scatterplot_IDP_ratio_groupby_subphylum.html">interactive
+scatterplot&lt;/a> to visualize the result. Currently we haven&amp;rsquo;t
+confirm any correlation between these 2 factors.&lt;/p></description></item><item><title>iTARGEX analysis of yeast deletome reveals novel regulators of transcriptional buffering in S phase and protein turnover</title><link>https://chtsai0105.github.io/publication/huang-itargex-2021/</link><pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate><guid>https://chtsai0105.github.io/publication/huang-itargex-2021/</guid><description/></item><item><title>H3K4 methylation at active genes mitigates transcription-replication conflicts during replication stress</title><link>https://chtsai0105.github.io/publication/chong-h-3-k-4-2020/</link><pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate><guid>https://chtsai0105.github.io/publication/chong-h-3-k-4-2020/</guid><description/></item><item><title/><link>https://chtsai0105.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://chtsai0105.github.io/about/</guid><description/></item><item><title/><link>https://chtsai0105.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://chtsai0105.github.io/admin/config.yml</guid><description/></item></channel></rss>
