@@ -6,6 +6,37 @@ is used by some tools to predict the IDRs from a peptide sequence.&lt;/p>
 over 8 millions predicted IDRs by the tools IUPred2. We calculated the IDP/peptide ratio and found they are
 varying between subphylum - Microsporidia has only 12.5% of the peptides are IDP but more than half of the
 peptides in Ustilaginomycotina contains IDRs.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Alt text" srcset="
+/project/idr_on_fungi/image_hu01c3df0bd041e76359494e7577fe9845_56192_607da6358b3b28613c7f7ffaaee68d33.webp 400w,
+/project/idr_on_fungi/image_hu01c3df0bd041e76359494e7577fe9845_56192_aae7cbf9bddd1b9a0b145f1e05c24231.webp 760w,
+/project/idr_on_fungi/image_hu01c3df0bd041e76359494e7577fe9845_56192_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://chtsai0105.github.io/project/idr_on_fungi/image_hu01c3df0bd041e76359494e7577fe9845_56192_607da6358b3b28613c7f7ffaaee68d33.webp"
+width="755"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
 &lt;p>We further investigate the relationship between IDP/peptide ratio and genome size and generate an &lt;a href="scatterplot_IDP_ratio_groupby_subphylum.html">interactive
 scatterplot&lt;/a> to visualize the result. Currently we haven&amp;rsquo;t
-confirm any correlation between these 2 factors.&lt;/p></description></item></channel></rss>
+confirm any correlation between these 2 factors.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Alt text" srcset="
+/project/idr_on_fungi/image-1_hub5a9f0e6a90cc0a1e013d0e68c2f0577_22894_bce4d2e743f28497196d8ab8a039c5bc.webp 400w,
+/project/idr_on_fungi/image-1_hub5a9f0e6a90cc0a1e013d0e68c2f0577_22894_966b6651e8e03005881b451eea607d8a.webp 760w,
+/project/idr_on_fungi/image-1_hub5a9f0e6a90cc0a1e013d0e68c2f0577_22894_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://chtsai0105.github.io/project/idr_on_fungi/image-1_hub5a9f0e6a90cc0a1e013d0e68c2f0577_22894_bce4d2e743f28497196d8ab8a039c5bc.webp"
+width="705"
+height="327"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Our goal is to find out the IDRs that have specific function but major obstacle is how to effectively filter out
+the non-functional ones. Since all the IDR predictions are rely on IUPred2 and might contain many false positives.
+One interference might be linker peptides that connect each functional domain. Any linker longer than 30 bp will
+be classified as an IDR but probably isn&amp;rsquo;t what we want. Therefore, we need a better way to filter out all these
+noises and we might have chances to target those functional IDRs.&lt;/p></description></item></channel></rss>
