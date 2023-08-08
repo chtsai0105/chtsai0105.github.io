@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>functional annotation | CHTsai</title><link>https://chtsai0105.github.io/tag/functional-annotation/</link><atom:link href="https://chtsai0105.github.io/tag/functional-annotation/index.xml" rel="self" type="application/rss+xml"/><description>functional annotation</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 07 Aug 2023 22:48:23 -0700</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hue12033e7bcbf2b7513dbeb90bca8f915_21606_512x512_fill_lanczos_center_3.png</url><title>functional annotation</title><link>https://chtsai0105.github.io/tag/functional-annotation/</link></image><item><title>dbcanLight</title><link>https://chtsai0105.github.io/project/dbcanlight/</link><pubDate>Mon, 07 Aug 2023 22:48:23 -0700</pubDate><guid>https://chtsai0105.github.io/project/dbcanlight/</guid><description>&lt;p>Functional annotation is an important step in genome/metagenome projects. It give us hints of what these
+genes are capable of. One of the widely used functional database is CAZy (Carbohydrate-Active enZYmes), which
+describes the enzymes that degrade, modify, or create glycosidic bonds.&lt;/p>
+&lt;p>Currently, most of the users access the CAZy database through the tool &lt;a href="https://github.com/linnabrown/run_dbcan" target="_blank" rel="noopener">run_dbcan&lt;/a>,
+which is able to identify the CAZymes and even the potential substrates of a given peptide sequence. However,
+the hmmscan it use for the searching step is not very efficient and are quite time consuming when the querying/searching
+database is huge.&lt;/p>
+&lt;p>To improve the performance, I re-designed the program, utilized pyhmmer, a python bindings to HMMER3, to develop a
+lightweight version - &lt;a href="dbcanLight">dbcanLight&lt;/a>. It reimplemented the cazyme and substrate search processes with
+hmmsearch and highly improve the speed.&lt;/p>
+&lt;p>We benchmarked on a protein fasta with 9,360 sequences. 3 rounds of tests have been run on cazyme detection mode
+(&amp;ndash;tools hmmer in run_dbcan and -m cazyme in dbcanLight) and 1 round of test have been run on substrate detection
+mode (&amp;ndash;tools dbcansub in run_dbcan and -m sub in dbcanLight). Our tool accelates 10X in substrate detection and
+almost 20X in cazyme detection. Moreover, the outputs are fully compatible with the original version.&lt;/p>
+&lt;p>If you&amp;rsquo;re interested in dbcanLight, please refer to the &lt;a href="dbcanLight">GitHub page&lt;/a>
+for more details.&lt;/p></description></item></channel></rss>
