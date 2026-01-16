@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Opencv |</title><link>https://chtsai0105.github.io/tags/opencv/</link><atom:link href="https://chtsai0105.github.io/tags/opencv/index.xml" rel="self" type="application/rss+xml"/><description>Opencv</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 16 Jan 2024 11:50:03 -0800</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hu_25e2a9fd5e6f1f27.png</url><title>Opencv</title><link>https://chtsai0105.github.io/tags/opencv/</link></image><item><title>AUTOCROP</title><link>https://chtsai0105.github.io/projects/autocrop/</link><pubDate>Tue, 16 Jan 2024 11:50:03 -0800</pubDate><guid>https://chtsai0105.github.io/projects/autocrop/</guid><description>&lt;p&gt;In high-throughput microbial research, monitoring growth rates across hundreds of samples is a significant logistical challenge.
+This project was developed to automate the processing of images for &lt;em&gt;Rhodotorula&lt;/em&gt; colony growth assays.&lt;/p&gt;
+&lt;p&gt;To maximize efficiency during data collection, multiple 96-well plates (typically three or four) are scanned into a single large
+image. However, to analyze growth rates, each plate must be isolated and standardized so that images of the same plate can be
+compared across different time points. AUTOCROP is a Python-based solution that replaces manual cropping with an automated
+pipeline.&lt;/p&gt;
+&lt;h4 id="the-challenge"&gt;The Challenge&lt;/h4&gt;
+&lt;p&gt;Standardizing colony images involves overcoming several environmental variables:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Color &amp;amp; Exposure Standardization: Because scanners automatically adjust color and contrast based on the density of the sample,
+images taken at different time points often lack consistency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic Growth Sensitivity: Early-stage or low-density colonies are often too faint for standard edge-detection algorithms to
+identify.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id="key-features"&gt;Key Features&lt;/h4&gt;
+&lt;p&gt;Here is the refined and formatted Features section for your project documentation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Color Normalization &amp;amp; Pixel Consistency: To enable precise growth rate analysis, the pipeline includes a standardization step
+that corrects for automatic scanner exposure and color shifts. This ensures that pixel-to-pixel comparisons remain accurate
+across images taken at different time points throughout the experiment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic Parameter Sets: To handle the &amp;ldquo;invisible colony&amp;rdquo; problem, the tool includes three sensitivity presets (High, Medium,
+and Low) tailored to colony density. These adjust the adaptive thresholding logic so that even low-biomass, faint plates are
+captured without losing their geometric boundaries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Auto-Detection &amp;amp; Manual Overrides: By default, the script analyzes the image context to automatically select the optimal
+processing parameters. If unique lighting artifacts or experimental glitches occur, users can easily force a specific preset
+via command-line flags (by using different preset).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flexible Layout Configurations: While optimized for the standard 3-plate scanning template used in our Rhodotorula research,
+the tool supports custom plate counts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Research-Ready Batch Workflow: AUTOCROP is designed to be wrapped in simple bash loops, allowing for the fully automated
+processing of entire data directories. This transforms a bottleneck of thousands of raw scans into analysis-ready files in
+minutes rather than hours.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in AUTOCROP, please refer to the
+for more details.&lt;/p&gt;</description></item></channel></rss>

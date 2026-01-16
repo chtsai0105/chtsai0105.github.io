@@ -12,7 +12,54 @@ loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in Phyling, please refer to the
-for more details.&lt;/p&gt;</description></item><item><title>dbcanLight</title><link>https://chtsai0105.github.io/projects/dbcanlight/</link><pubDate>Mon, 07 Aug 2023 22:48:23 -0700</pubDate><guid>https://chtsai0105.github.io/projects/dbcanlight/</guid><description>&lt;p&gt;Dbcanlight is a lightweight rewrite of a widely used CAZyme annotation tool run_dbcan. It uses pyhmmer, a Cython binding to
+for more details.&lt;/p&gt;</description></item><item><title>AUTOCROP</title><link>https://chtsai0105.github.io/projects/autocrop/</link><pubDate>Tue, 16 Jan 2024 11:50:03 -0800</pubDate><guid>https://chtsai0105.github.io/projects/autocrop/</guid><description>&lt;p&gt;In high-throughput microbial research, monitoring growth rates across hundreds of samples is a significant logistical challenge.
+This project was developed to automate the processing of images for &lt;em&gt;Rhodotorula&lt;/em&gt; colony growth assays.&lt;/p&gt;
+&lt;p&gt;To maximize efficiency during data collection, multiple 96-well plates (typically three or four) are scanned into a single large
+image. However, to analyze growth rates, each plate must be isolated and standardized so that images of the same plate can be
+compared across different time points. AUTOCROP is a Python-based solution that replaces manual cropping with an automated
+pipeline.&lt;/p&gt;
+&lt;h4 id="the-challenge"&gt;The Challenge&lt;/h4&gt;
+&lt;p&gt;Standardizing colony images involves overcoming several environmental variables:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Color &amp;amp; Exposure Standardization: Because scanners automatically adjust color and contrast based on the density of the sample,
+images taken at different time points often lack consistency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic Growth Sensitivity: Early-stage or low-density colonies are often too faint for standard edge-detection algorithms to
+identify.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id="key-features"&gt;Key Features&lt;/h4&gt;
+&lt;p&gt;Here is the refined and formatted Features section for your project documentation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Color Normalization &amp;amp; Pixel Consistency: To enable precise growth rate analysis, the pipeline includes a standardization step
+that corrects for automatic scanner exposure and color shifts. This ensures that pixel-to-pixel comparisons remain accurate
+across images taken at different time points throughout the experiment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic Parameter Sets: To handle the &amp;ldquo;invisible colony&amp;rdquo; problem, the tool includes three sensitivity presets (High, Medium,
+and Low) tailored to colony density. These adjust the adaptive thresholding logic so that even low-biomass, faint plates are
+captured without losing their geometric boundaries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Auto-Detection &amp;amp; Manual Overrides: By default, the script analyzes the image context to automatically select the optimal
+processing parameters. If unique lighting artifacts or experimental glitches occur, users can easily force a specific preset
+via command-line flags (by using different preset).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flexible Layout Configurations: While optimized for the standard 3-plate scanning template used in our Rhodotorula research,
+the tool supports custom plate counts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Research-Ready Batch Workflow: AUTOCROP is designed to be wrapped in simple bash loops, allowing for the fully automated
+processing of entire data directories. This transforms a bottleneck of thousands of raw scans into analysis-ready files in
+minutes rather than hours.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in AUTOCROP, please refer to the
+for more details.&lt;/p&gt;</description></item><item><title>dbcanlight</title><link>https://chtsai0105.github.io/projects/dbcanlight/</link><pubDate>Mon, 07 Aug 2023 22:48:23 -0700</pubDate><guid>https://chtsai0105.github.io/projects/dbcanlight/</guid><description>&lt;p&gt;Dbcanlight is a lightweight rewrite of a widely used CAZyme annotation tool run_dbcan. It uses pyhmmer, a Cython binding to
 HMMER3, in place of the HMMER3 CLI suite as the backend for search processes, improving multithreading performance. In addition,
 it removes a limitation in run_dbcan that required manual splitting of large sequence files beforehand.&lt;/p&gt;
 &lt;p&gt;The main program dbcanlight comprises three modules - &lt;code&gt;build&lt;/code&gt;, &lt;code&gt;search&lt;/code&gt; and &lt;code&gt;conclude&lt;/code&gt;. The &lt;code&gt;build&lt;/code&gt; module help to download the
@@ -29,5 +76,5 @@ src="https://chtsai0105.github.io/projects/dbcanlight/performance_comparison.svg
 loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in dbcanLight, please refer to the
+&lt;p&gt;If you&amp;rsquo;re interested in dbcanlight, please refer to the
 for more details.&lt;/p&gt;</description></item></channel></rss>
