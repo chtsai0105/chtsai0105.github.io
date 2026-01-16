@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IDP |</title><link>https://chtsai0105.github.io/tags/idp/</link><atom:link href="https://chtsai0105.github.io/tags/idp/index.xml" rel="self" type="application/rss+xml"/><description>IDP</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 25 Oct 2021 14:31:14 -0700</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hu_25e2a9fd5e6f1f27.png</url><title>IDP</title><link>https://chtsai0105.github.io/tags/idp/</link></image><item><title>IDRs in Fungi</title><link>https://chtsai0105.github.io/projects/idr-in-fungi/</link><pubDate>Mon, 25 Oct 2021 14:31:14 -0700</pubDate><guid>https://chtsai0105.github.io/projects/idr-in-fungi/</guid><description>&lt;p&gt;Intrinsically Disordered Regions (IDRs) are polypeptide segments characterized by their structural flexibility. These regions
+often lack hydrophobic residues, which is the primary drivers of protein folding, and are instead enriched with polar and charged
+residues, which enhance their solubility and interaction with the aqueous environment. This distinct amino acid composition is
+leveraged by computational tools, such as IUPred2, to predict IDRs directly from primary peptide sequences.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="pipeline"
+src="https://chtsai0105.github.io/projects/idr-in-fungi/pipeline.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;In this project, we analyzed peptide sequences from 1,014 fungal species curated by Ensembl, identifying over 8 million predicted
+IDRs using IUPred2. Our analysis of the IDP/peptide ratio revealed significant variation across taxonomic groups. For example,
+Microsporidia exhibited the lowest prevalence, with only 12.5% of their peptides containing IDRs. In contrast, more than half of
+the proteome in Ustilaginomycotina was found to contain disordered regions.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;
+&lt;img alt="barplot"
+srcset="https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_e5b6895524974c9d.webp 320w, https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_86de2686dc0b05a0.webp 480w, https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_e3d8172887f843f2.webp 755w"
+sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px"
+src="https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_e5b6895524974c9d.webp"
+width="755"
+height="760"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;To further explore these trends, we investigated the relationship between the IDP/peptide ratio and genome size. We have provided
+an
+to visualize these results, categorized by subphylum.&lt;/p&gt;</description></item></channel></rss>

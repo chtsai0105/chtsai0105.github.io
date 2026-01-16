@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Microbiome |</title><link>https://chtsai0105.github.io/tags/microbiome/</link><atom:link href="https://chtsai0105.github.io/tags/microbiome/index.xml" rel="self" type="application/rss+xml"/><description>Microbiome</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 13 Dec 2025 23:18:17 -0700</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hu_25e2a9fd5e6f1f27.png</url><title>Microbiome</title><link>https://chtsai0105.github.io/tags/microbiome/</link></image><item><title>Microbial Succession in Elk Dung</title><link>https://chtsai0105.github.io/projects/elk-dung/</link><pubDate>Sat, 13 Dec 2025 23:18:17 -0700</pubDate><guid>https://chtsai0105.github.io/projects/elk-dung/</guid><description>&lt;p&gt;Herbivore dung decomposition forms a dynamic microscale ecosystem where microbes drive nutrient cycling and organic matter
+turnover. We investigated microbial succession during tule elk dung decomposition, focusing on how community shifts relate to
+changes in carbohydrate-active enzyme (CAZyme) substrate utilization. Using amplicon sequencing and shotgun metagenomics, we
+tracked temporal changes in community composition, diversity, and functional potential.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="Approaches being applied to study microbial communities"
+src="https://chtsai0105.github.io/projects/elk-dung/assumption.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Bacterial communities followed a more predictable and directional successional trajectory, while fungal communities were more
+variable and stochastic. Functional profiles from both metagenome-assembled genomes (MAGs) and amplicon-based proxy proteomes
+revealed a progression from labile to recalcitrant carbon utilization across decomposition. Substrate-specific CAZyme profiles
+showed complementary bacterial and fungal roles: bacteria were enriched in enzymes targeting sucrose, starch, and xylan, whereas
+fungi specialized in degrading cellulose and lignin.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="Diversity assays"
+src="https://chtsai0105.github.io/projects/elk-dung/diversity_assay.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="Substrate utilization potentials in each time point"
+src="https://chtsai0105.github.io/projects/elk-dung/substrate_utilization_potentials.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects |</title><link>https://chtsai0105.github.io/projects/</link><atom:link href="https://chtsai0105.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hu_25e2a9fd5e6f1f27.png</url><title>Projects</title><link>https://chtsai0105.github.io/projects/</link></image><item><title>Microbial Succession in Elk Dung</title><link>https://chtsai0105.github.io/projects/elk-dung/</link><pubDate>Sat, 13 Dec 2025 23:18:17 -0700</pubDate><guid>https://chtsai0105.github.io/projects/elk-dung/</guid><description>&lt;p&gt;Herbivore dung decomposition forms a dynamic microscale ecosystem where microbes drive nutrient cycling and organic matter
+turnover. We investigated microbial succession during tule elk dung decomposition, focusing on how community shifts relate to
+changes in carbohydrate-active enzyme (CAZyme) substrate utilization. Using amplicon sequencing and shotgun metagenomics, we
+tracked temporal changes in community composition, diversity, and functional potential.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="Approaches being applied to study microbial communities"
+src="https://chtsai0105.github.io/projects/elk-dung/assumption.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Bacterial communities followed a more predictable and directional successional trajectory, while fungal communities were more
+variable and stochastic. Functional profiles from both metagenome-assembled genomes (MAGs) and amplicon-based proxy proteomes
+revealed a progression from labile to recalcitrant carbon utilization across decomposition. Substrate-specific CAZyme profiles
+showed complementary bacterial and fungal roles: bacteria were enriched in enzymes targeting sucrose, starch, and xylan, whereas
+fungi specialized in degrading cellulose and lignin.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="Diversity assays"
+src="https://chtsai0105.github.io/projects/elk-dung/diversity_assay.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="Substrate utilization potentials in each time point"
+src="https://chtsai0105.github.io/projects/elk-dung/substrate_utilization_potentials.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description></item><item><title>Phyling</title><link>https://chtsai0105.github.io/projects/phyling/</link><pubDate>Thu, 07 Aug 2025 22:48:23 -0700</pubDate><guid>https://chtsai0105.github.io/projects/phyling/</guid><description>&lt;p&gt;Phyling is a fast, scalable, and user-friendly tool supporting phylogenomic reconstruction of species phylogenies directly from
+protein-encoded genomic data. It identifies orthologous genes by searching a sample&amp;rsquo;s protein sequences against a Hidden Markov
+Models marker set, containing single-copy orthologs, retrieved from the
+. In the final step, users can choose between consensus and concatenation
+strategies to construct the species tree from the aligned orthologs.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="workflow"
+src="https://chtsai0105.github.io/projects/phyling/phyling_flowchart-light.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in Phyling, please refer to the
+for more details.&lt;/p&gt;</description></item><item><title>dbcanLight</title><link>https://chtsai0105.github.io/projects/dbcanlight/</link><pubDate>Mon, 07 Aug 2023 22:48:23 -0700</pubDate><guid>https://chtsai0105.github.io/projects/dbcanlight/</guid><description>&lt;p&gt;Dbcanlight is a lightweight rewrite of a widely used CAZyme annotation tool run_dbcan. It uses pyhmmer, a Cython binding to
+HMMER3, in place of the HMMER3 CLI suite as the backend for search processes, improving multithreading performance. In addition,
+it removes a limitation in run_dbcan that required manual splitting of large sequence files beforehand.&lt;/p&gt;
+&lt;p&gt;The main program dbcanlight comprises three modules - &lt;code&gt;build&lt;/code&gt;, &lt;code&gt;search&lt;/code&gt; and &lt;code&gt;conclude&lt;/code&gt;. The &lt;code&gt;build&lt;/code&gt; module help to download the
+required databases from dbCAN website; the &lt;code&gt;search&lt;/code&gt; module searches against protein HMM, substrate HMM or diamond databases and
+reports the hits separately; and the &lt;code&gt;conclude&lt;/code&gt; module gathers all the results made by each module and provides a summary.&lt;/p&gt;
+&lt;p&gt;We benchmarked dbcanlight with a protein fasta with 14,574 sequences. 3 rounds of test were run on cazyme and substrate detection
+mode (&lt;code&gt;--tools hmmer dbcansub&lt;/code&gt; in run_dbcan and &lt;code&gt;-m cazyme&lt;/code&gt; and &lt;code&gt;-m sub&lt;/code&gt; in dbcanlight). The performance tests show that the
+dbcanlight is approximately 3X faster than run_dbcan with acceptable 2 GB of RAM usage.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="performance"
+src="https://chtsai0105.github.io/projects/dbcanlight/performance_comparison.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in dbcanLight, please refer to the
+for more details.&lt;/p&gt;</description></item><item><title>Snakemake</title><link>https://chtsai0105.github.io/projects/snakemake/</link><pubDate>Thu, 11 May 2023 11:33:54 -0700</pubDate><guid>https://chtsai0105.github.io/projects/snakemake/</guid><description>&lt;p&gt;
+is a Python-based workflow management system designed to create reproducible and
+scalable data processing pipelines. A Snakemake workflow is composed of rules that define how to transform specific inputs into
+desired outputs. Upon execution, the engine automatically constructs a Directed Acyclic Graph (DAG) to determine the exact
+sequence of rules required to reach a specified target.&lt;/p&gt;
+&lt;h3 id="the-shift-from-imperative-to-declarative-logic"&gt;The Shift from Imperative to Declarative Logic&lt;/h3&gt;
+&lt;p&gt;Building a Snakemake workflow represents a significant departure from traditional scripting methods. Traditionally, pipelines are constructed imperatively: a developer writes a series of scripts and executes them sequentially, manually passing the output of one step as the input for the next.&lt;/p&gt;
+&lt;p&gt;In contrast, Snakemake utilizes declarative, back-tracing logic. Rather than starting from the raw data, the engine starts with the final target and works backward. It identifies the rule capable of generating that target, looks for its required inputs, and continues this upstream search until it reaches the available source files.&lt;/p&gt;
+&lt;p&gt;This &amp;ldquo;backward&amp;rdquo; way of thinking requires developers to define rules based on the desired output filenames. Because Snakemake uses pattern matching on filenames to resolve dependencies, naming conventions become the primary architecture of the pipeline.&lt;/p&gt;
+&lt;h3 id="challenges-in-rule-definition"&gt;Challenges in Rule Definition&lt;/h3&gt;
+&lt;p&gt;Developers must be vigilant regarding two specific risks:&lt;/p&gt;
+&lt;p&gt;Ambiguity: If multiple rules are defined such that they could produce the same output file, the workflow will fail to resolve the
+path.&lt;/p&gt;
+&lt;p&gt;Implicit Connections: Loosely defined or overly generic rules may link together in unexpected ways, creating a logical flow that
+produces &amp;ldquo;false&amp;rdquo; or unintended outputs without throwing an explicit error.&lt;/p&gt;
+&lt;p&gt;Here are several workflows we developed previously that can be used for different genomic analyses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>IDRs in Fungi</title><link>https://chtsai0105.github.io/projects/idr-in-fungi/</link><pubDate>Mon, 25 Oct 2021 14:31:14 -0700</pubDate><guid>https://chtsai0105.github.io/projects/idr-in-fungi/</guid><description>&lt;p&gt;Intrinsically Disordered Regions (IDRs) are polypeptide segments characterized by their structural flexibility. These regions
+often lack hydrophobic residues, which is the primary drivers of protein folding, and are instead enriched with polar and charged
+residues, which enhance their solubility and interaction with the aqueous environment. This distinct amino acid composition is
+leveraged by computational tools, such as IUPred2, to predict IDRs directly from primary peptide sequences.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="pipeline"
+src="https://chtsai0105.github.io/projects/idr-in-fungi/pipeline.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;In this project, we analyzed peptide sequences from 1,014 fungal species curated by Ensembl, identifying over 8 million predicted
+IDRs using IUPred2. Our analysis of the IDP/peptide ratio revealed significant variation across taxonomic groups. For example,
+Microsporidia exhibited the lowest prevalence, with only 12.5% of their peptides containing IDRs. In contrast, more than half of
+the proteome in Ustilaginomycotina was found to contain disordered regions.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;
+&lt;img alt="barplot"
+srcset="https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_e5b6895524974c9d.webp 320w, https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_86de2686dc0b05a0.webp 480w, https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_e3d8172887f843f2.webp 755w"
+sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px"
+src="https://chtsai0105.github.io/projects/idr-in-fungi/image_hu_e5b6895524974c9d.webp"
+width="755"
+height="760"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;To further explore these trends, we investigated the relationship between the IDP/peptide ratio and genome size. We have provided
+an
+to visualize these results, categorized by subphylum.&lt;/p&gt;</description></item></channel></rss>

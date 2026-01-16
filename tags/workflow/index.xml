@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Workflow |</title><link>https://chtsai0105.github.io/tags/workflow/</link><atom:link href="https://chtsai0105.github.io/tags/workflow/index.xml" rel="self" type="application/rss+xml"/><description>Workflow</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Aug 2025 22:48:23 -0700</lastBuildDate><image><url>https://chtsai0105.github.io/media/icon_hu_25e2a9fd5e6f1f27.png</url><title>Workflow</title><link>https://chtsai0105.github.io/tags/workflow/</link></image><item><title>Phyling</title><link>https://chtsai0105.github.io/projects/phyling/</link><pubDate>Thu, 07 Aug 2025 22:48:23 -0700</pubDate><guid>https://chtsai0105.github.io/projects/phyling/</guid><description>&lt;p&gt;Phyling is a fast, scalable, and user-friendly tool supporting phylogenomic reconstruction of species phylogenies directly from
+protein-encoded genomic data. It identifies orthologous genes by searching a sample&amp;rsquo;s protein sequences against a Hidden Markov
+Models marker set, containing single-copy orthologs, retrieved from the
+. In the final step, users can choose between consensus and concatenation
+strategies to construct the species tree from the aligned orthologs.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;&lt;img alt="workflow"
+src="https://chtsai0105.github.io/projects/phyling/phyling_flowchart-light.svg"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in Phyling, please refer to the
+for more details.&lt;/p&gt;</description></item><item><title>Snakemake</title><link>https://chtsai0105.github.io/projects/snakemake/</link><pubDate>Thu, 11 May 2023 11:33:54 -0700</pubDate><guid>https://chtsai0105.github.io/projects/snakemake/</guid><description>&lt;p&gt;
+is a Python-based workflow management system designed to create reproducible and
+scalable data processing pipelines. A Snakemake workflow is composed of rules that define how to transform specific inputs into
+desired outputs. Upon execution, the engine automatically constructs a Directed Acyclic Graph (DAG) to determine the exact
+sequence of rules required to reach a specified target.&lt;/p&gt;
+&lt;h3 id="the-shift-from-imperative-to-declarative-logic"&gt;The Shift from Imperative to Declarative Logic&lt;/h3&gt;
+&lt;p&gt;Building a Snakemake workflow represents a significant departure from traditional scripting methods. Traditionally, pipelines are constructed imperatively: a developer writes a series of scripts and executes them sequentially, manually passing the output of one step as the input for the next.&lt;/p&gt;
+&lt;p&gt;In contrast, Snakemake utilizes declarative, back-tracing logic. Rather than starting from the raw data, the engine starts with the final target and works backward. It identifies the rule capable of generating that target, looks for its required inputs, and continues this upstream search until it reaches the available source files.&lt;/p&gt;
+&lt;p&gt;This &amp;ldquo;backward&amp;rdquo; way of thinking requires developers to define rules based on the desired output filenames. Because Snakemake uses pattern matching on filenames to resolve dependencies, naming conventions become the primary architecture of the pipeline.&lt;/p&gt;
+&lt;h3 id="challenges-in-rule-definition"&gt;Challenges in Rule Definition&lt;/h3&gt;
+&lt;p&gt;Developers must be vigilant regarding two specific risks:&lt;/p&gt;
+&lt;p&gt;Ambiguity: If multiple rules are defined such that they could produce the same output file, the workflow will fail to resolve the
+path.&lt;/p&gt;
+&lt;p&gt;Implicit Connections: Loosely defined or overly generic rules may link together in unexpected ways, creating a logical flow that
+produces &amp;ldquo;false&amp;rdquo; or unintended outputs without throwing an explicit error.&lt;/p&gt;
+&lt;p&gt;Here are several workflows we developed previously that can be used for different genomic analyses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
